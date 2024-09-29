@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: white;
+}
+
+header {
+    background-image: url('https://blog.kolau.com/wp-content/uploads/2019/04/estrategias-para-vender-flores-destacada.jpg');
+    background-size:cover;
+    color: black;
+    text-align: center;
+    padding: 120px 0;
+}
+
+nav {
+    background-color: #333;  
+    position: fixed;      
+    top: 0;
+    width: 100%;           
+    z-index: 1000;          
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;           
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;         
+}
+
+nav ul li a:hover {
+    background-color: #555;  
+    border-radius: 5px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 24px;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+}
